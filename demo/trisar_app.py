@@ -71,7 +71,7 @@ def build_arg_parser():
     parser.add_argument("--default-top-k-patches", type=int, default=12)
     parser.add_argument("--default-top-k-timelines", type=int, default=12)
 
-    parser.add_argument("--default-checkpoint-path", type=str, default="convnext_change_pipeline/best_model.pt")
+    parser.add_argument("--default-checkpoint-path", type=str, default="best_model.pt")
     parser.add_argument("--default-download-dir", type=str, default="downloaded_geo_tifs")
     parser.add_argument("--page-title", type=str, default="Capella Patch Timeline Demo")
 
