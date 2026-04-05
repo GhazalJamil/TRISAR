@@ -1,0 +1,13 @@
+numpy
+pandas
+matplotlib
+opencv-python
+requests
+streamlit
+rasterio
+torch
+torchvision
+timm
+jupyter
+notebook
+ipykernel
