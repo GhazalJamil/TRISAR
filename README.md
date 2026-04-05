@@ -1,12 +1,10 @@
 # TRISAR: Self-Supervised Triplet Metric Learning for Temporal SAR Interpretation
 
 This repository was created for the 2026 IEEE Data Fusion Contest.
-
-The project has 3 main parts:
-
-1. Download data
-2. Train the model
-3. Run the demo
+Authors:
+- Jamil J Ghazal
+- Vera Könyves
+- András Jung
 
 ## Installation
 
@@ -14,60 +12,46 @@ Install the required packages with:
 
 pip install -r requirements.txt
 
-## Project structure
+# Steps to follow:
 
-The main parts of the project are:
+This document outlines the steps to use the TRISAR project for temporal SAR interpretation.
 
-- download utilities
-- training utilities
-- demo application
+## Step 1: Download Data
 
-## 1. Download data
+First, download the required SAR data using the download notebook:
 
-The first step is to filter and download the required SAR TIFF files.
+- Open and run `data/download.ipynb`
+- This will filter and download SAR TIFF files near predefined locations
+- Organize the data into appropriate folders
+- Prepare patch datasets and CSV files
 
-This part is used to:
-- select scenes near predefined locations
-- download the TIFF files
-- organize them into the data folders
-- prepare patch datasets and CSV files
+## Step 2: Train or Use Pre-trained Model
 
-## 2. Train
+You have two options for obtaining a model:
 
-The training part is used to:
-- load the generated triplets and image data
-- train the TRISAR model
-- save checkpoints and outputs
+### Option A: Train Your Own Model
 
-## 3. Demo
+- Open and run `train/train.ipynb`
+- This will train the TRISAR model using the downloaded data
+- Save the trained checkpoint
+- Use it inside demo app (step 3.)
 
-The demo is a Streamlit application.
+### Option B: Use Pre-trained Model
 
-It can be used to:
-- inspect downloaded TIFF scenes
-- analyze patch timelines
-- visualize temporary and continuous changes
-- localize the most suspicious regions
+- Download our trained model from Google Drive: [link](link)
+- Place the checkpoint in the appropriate location
+- Use it inside demo app (step 3.)
 
-## Run the demo
+## Step 3: Run the Demo Application
 
-Start the demo with:
+- Start the demo application: `streamlit run demo/trisar_app.py`
+- Use your model (.pt) file, -> UI -> Model -> Checkpoint path
+- Use the demo for:
+  - Inspecting downloaded TIFF scenes
+  - Analyzing patch timelines
+  - Visualizing temporal and continuous changes
+  - Localizing suspicious regions
+  - Change detection
+  - Timeline analysis
 
-streamlit run demo/trisar_app.py
-
-You can also pass parameters from the command line.
-
-## Notes
-
-- Large TIFF files and generated datasets should not be uploaded to Git
-- Model checkpoints should also be ignored unless you explicitly want to share them
-- The repository is mainly for code, configuration, and notebooks
-
-## Summary
-
-This repository contains the code for the TRISAR pipeline built for the IEEE Data Fusion Contest.
-
-Main workflow:
-- download data
-- train the model
-- run the demo
+You can pass command-line parameters to customize the demo behavior.
