@@ -46,7 +46,6 @@ def build_arg_parser():
         type=parse_locations_arg,
         default={
             "San Jose": {"lat": 37.313149020, "lon": -121.894385880},
-            # "Alicante": {"lat": 38.384322, "lon": -0.415070},
         },
     )
 
@@ -63,8 +62,8 @@ def build_arg_parser():
     parser.add_argument("--embed-dim", type=int, default=256)
     parser.add_argument("--dropout", type=float, default=0.20)
 
-    parser.add_argument("--crop-size-m", type=int, default=3000)
-    parser.add_argument("--canvas-size", type=int, default=3000)
+    parser.add_argument("--crop-size-m", type=int, default=6000)
+    parser.add_argument("--canvas-size", type=int, default=6000)
     parser.add_argument("--patch-size", type=int, default=256)
     parser.add_argument("--stride", type=int, default=256)
 
