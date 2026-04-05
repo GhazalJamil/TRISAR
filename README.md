@@ -1,8 +1,9 @@
 # TRISAR: Self-Supervised Triplet Metric Learning for Temporal SAR Interpretation
 
-This repository was created for the 2026 IEEE Data Fusion Contest.
-Authors:
-- Jamil J Ghazal
+This repository was created for the **2026 IEEE Data Fusion Contest**.
+
+**Authors**
+- Jamil J. Ghazal
 - Vera Könyves
 - András Jung
 
@@ -10,8 +11,9 @@ Authors:
 
 Install the required packages with:
 
+```bash
 pip install -r requirements.txt
-
+```
 # Steps to follow:
 
 This document outlines the steps to use the TRISAR project for temporal SAR interpretation.
@@ -38,7 +40,7 @@ You have two options for obtaining a model:
 
 ### Option B: Use Pre-trained Model
 
-- Download our trained model from Google Drive: [link](link)
+- Download our trained model from Google Drive: [link](https://drive.google.com/file/d/1sGaRBHGmmxrBw1UJQNk07qaqNNAitMyL/view?usp=drive_link)
 - Place the checkpoint in the appropriate location
 - Use it inside demo app (step 3.)
 
@@ -55,3 +57,19 @@ You have two options for obtaining a model:
   - Timeline analysis
 
 You can pass command-line parameters to customize the demo behavior.
+
+## Acknowledgment
+
+This work was prepared for the **2026 IEEE GRSS Data Fusion Contest**.
+
+The authors would like to thank the **IEEE Geoscience and Remote Sensing Society (GRSS)**, the **Image Analysis and Data Fusion (IADF) Technical Committee**, and **Capella Space** for organizing the contest and providing the SAR data used in this work.
+
+## Contact
+
+For questions, collaboration, or further information, please contact:
+
+**Jamil József Ghazal**  
+- [GhazalJamil](https://github.com/GhazalJamil)
+- gy51by@inf.elte.hu
+
+You may also open an issue in this repository for project-related questions.
