@@ -63,7 +63,7 @@ def build_arg_parser():
     parser.add_argument("--dropout", type=float, default=0.20)
 
     parser.add_argument("--crop-size-m", type=int, default=6000)
-    parser.add_argument("--canvas-size", type=int, default=6000)
+    parser.add_argument("--canvas-size", type=int, default=8000) # Must be >= crop_size_m to avoid cropping artifacts in the visualization
     parser.add_argument("--patch-size", type=int, default=256)
     parser.add_argument("--stride", type=int, default=256)
 
