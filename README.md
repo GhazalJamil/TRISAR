@@ -1,6 +1,6 @@
 # TRISAR: Self-Supervised Triplet Metric Learning for Temporal SAR Interpretation
 
-This repository contains **TRISAR**, a self-supervised deep metric learning framework developed for the **2026 IEEE Data Fusion Contest**.
+This repository contains **TRISAR**, a self-supervised deep metric learning framework developed for the [2026 IEEE GRSS Data Fusion Contest](https://www.grss-ieee.org/community/technical-committees/2026-data-fusion-contest/)
 
 TRISAR is designed for temporal SAR image analysis, with a focus on learning robust patch-level representations for temporal comparison, suspicious region ranking, timeline-based interpretation, compact localization of suspicious regions, and interactive visual exploration through a demo application.
 
